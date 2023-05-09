@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Launcher</RootNamespace>
     <AssemblyName>Launcher</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -90,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SystemInfoForm.resx">
       <DependentUpon>SystemInfoForm.cs</DependentUpon>
@@ -118,6 +120,10 @@
     <ProjectReference Include="..\SnakeBattle\SnakeBattle.csproj">
       <Project>{6873baf7-6186-497c-8c82-c4c8ee49a74b}</Project>
       <Name>SnakeBattle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentSnake\StudentSnake.csproj">
+      <Project>{b43ddc6c-333e-4acd-a8b9-fa7a0d4ab285}</Project>
+      <Name>StudentSnake</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
